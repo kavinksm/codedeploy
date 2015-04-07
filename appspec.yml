@@ -18,5 +18,5 @@ hooks:
     - location: scripts/stoptomcat6.sh
       runas: ec2-user
    AfterInstall:
-    - location: scripts/starttomcat6
+    - location: scripts/starttomcat6.sh
       runas: ec2-user
