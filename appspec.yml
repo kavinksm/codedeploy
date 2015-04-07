@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-   - source: ~/sample.war
+   - source: war/sample.war
      destination: /usr/share/tomcat6/webapps/
 permissions:
    - object: scripts/*.sh
