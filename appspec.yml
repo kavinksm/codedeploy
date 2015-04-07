@@ -4,7 +4,7 @@ files:
    - source: /home/ec2-user/deploy/sample.war
      destination: /usr/share/tomcat6/webapps/
 permissions:
-   - object: /usr/share/tomcat6/webapps/sample.war
+   - object: scripts/*.sh
      pattern: "**"
      owner: ec2-user
      group: ec2-user
