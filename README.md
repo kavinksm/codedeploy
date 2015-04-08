@@ -5,6 +5,7 @@ aws code deploy sample repo
 1. Login to AWS console
 2. Create Two Roles in IAM
 	i. Create Custom Policy for codedeploy with the below template eg : role-codedeploy
+Code blocks(
 			{
 			  "Version": "2012-10-17",
 			  "Statement": [
@@ -23,7 +24,7 @@ aws code deploy sample repo
 				  "Resource": "*"
 				}
 			  ]
-			}
+			})
 	ii. Edit the "Trust Relationships" of the above role (role-codedeploy) and replace it with below teamplate
 			{
 			  "Version": "2012-10-17",
