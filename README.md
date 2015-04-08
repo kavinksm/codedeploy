@@ -3,7 +3,9 @@ aws code deploy sample repo
 
 #Instruction
 1. Login to AWS console.
+
 2. Create Two Roles in IAM.
+
 2.1. Create Custom Policy for codedeploy with the below template eg : role-codedeploy.
 
 >			{
@@ -63,8 +65,9 @@ aws code deploy sample repo
 >				]
 >			}
 
-3.Launch  EC2 instance with ec2role.
-4.Run the below command as root in newly created EC2 instance.
+3. Launch  EC2 instance with ec2role.
+
+4. Run the below command as root in newly created EC2 instance.
 
 >	yum -y update
 >	yum install -y aws-cli
