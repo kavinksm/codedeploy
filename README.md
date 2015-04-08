@@ -66,26 +66,26 @@ aws code deploy sample repo
 >				]
 >			}
 
-3.	Launch  EC2 instance with ec2role.
+3. Launch  EC2 instance with ec2role.
 
-4.	Run the below command as root in newly created EC2 instance.
+4. Run the below command as root in newly created EC2 instance.
 
 >	yum -y update
 >	yum install -y aws-cli
 >	yum install tomcat6
 >	cd /home/ec2-user
 
-5.	To install Code Deploy Agent into EC2 instance run the below command.
+5. To install Code Deploy Agent into EC2 instance run the below command.
 
 >	aws s3 cp s3://aws-codedeploy-us-east-1/latest/install . --region us-east-1
 >	chmod +x ./install
 
-6. 	Quick hack to get the agent running faster.
+6.  Quick hack to get the agent running faster.
 
->	sed -i "s/sleep(.*)/sleep(10)/" install
+> 	sed -i "s/sleep(.*)/sleep(10)/" install
 >	./install auto
 
-7.	Verify the code deploy agent is running.
+7. Verify the code deploy agent is running.
 
 >	service codedeploy-agent status
 
