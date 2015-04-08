@@ -4,7 +4,7 @@ aws code deploy sample repo
 #Instruction
 1. Login to AWS console
 2. Create Two Roles in IAM
-	i. Create Custom Policy for codedeploy with the below template eg : role-codedeploy
+2.1. Create Custom Policy for codedeploy with the below template eg : role-codedeploy
 >			{
 >			  "Version": "2012-10-17",
 >			  "Statement": [
@@ -24,7 +24,7 @@ aws code deploy sample repo
 >				}
 >			  ]
 >			})
-	ii. Edit the "Trust Relationships" of the above role (role-codedeploy) and replace it with below teamplate
+2.2. Edit the "Trust Relationships" of the above role (role-codedeploy) and replace it with below teamplate
 >			{
 >			  "Version": "2012-10-17",
 >			  "Statement": [
@@ -41,9 +41,9 @@ aws code deploy sample repo
 >				}
 >			  ]
 >			}
-	iii. The above role will be used while creating new Application deployment under codedeploy.
+2.3. The above role will be used while creating new Application deployment under codedeploy.
 			"Select an existing service role that grants AWS CodeDeploy access to the instances - Service Role ARN*"
-	iv. Create Custom Policy for EC2 instance with the below template (ec2role)
+2.4. Create Custom Policy for EC2 instance with the below template (ec2role)
 >			{ 
 >				"Version": "2012-10-17", 
 >				"Statement": [   
